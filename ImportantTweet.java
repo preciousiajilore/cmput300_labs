@@ -1,19 +1,25 @@
 package com.example.lonelytwitter_preciousajilore;
+
 import java.util.Date;
 
-public class NormalTweet extends Tweet {
-    private String message;
-    private Date date;
 
-    public NormalTweet(String message){
-        super(message);
-    }
+public class ImportantTweet extends Tweet{
+        public ImportantTweet(String message){
+            //TODO: Call super in both of constructors
+            //Inheritance
+            super(message);
+        }
 
-    @Override
-    public Boolean isImportant(){
-        //TODO: isImportant method should return Boolean.False
-        return Boolean.FALSE;
-    }
+        public ImportantTweet(String message, Date date){
+            //TODO: Call super in constructor
+            //Inheritance
+            super(message, date);
+        }
 
-
+        @Override
+        public Boolean isImportant(){
+            //TODO: Return Boolean.TRUE
+            return Boolean.TRUE;
+        }
 }
+
